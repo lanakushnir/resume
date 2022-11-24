@@ -1,0 +1,12 @@
+:root {
+  --ff-default: 'Open Sans', Helvetica Neue, Arial, sans-serif;
+  --fw--light: 300;
+  --fw--regular: 400;
+  --fw--medium: 500;
+  --fw--semibold: 600;
+  --fw--bold: 700;
+  --fw--xbold: 700;
+  --fc--primary: hsla(0, 0%, 0%, 1);
+  --fc--link: hsla(0, 0%, 70%, 0.75);
+  --mb-spacing: 1rem;
+}

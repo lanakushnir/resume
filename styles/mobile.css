@@ -1,0 +1,16 @@
+@media (max-width: 600px) {
+  body {
+    margin: 1rem auto;
+    padding: 0 0.5rem;
+  }
+  address {
+    grid-template-columns: 1fr;
+  }
+  .job--wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "description";
+  }
+}

@@ -1,0 +1,87 @@
+@import url('styles/reboot.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import url('styles/variables.css');
+@import url('styles/font.css');
+@import url('styles/print.css') print;
+@import url('styles/desktop.css') print, screen and (min-width: 600px);
+@import url('styles/mobile.css') screen and (max-width: 600px);
+
+body {
+  font-family: var(--ff-default);
+  max-width: 960px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Layout */
+
+address {
+  display: grid;
+  grid-gap: 1rem;
+  font-weight: var(--fw--medium);
+}
+address a {
+  display: inherit;
+}
+a {
+  color: var(--fc--primary);
+  text-decoration: none;
+  font-weight: var(--fw-regular);
+  margin-top: 0.5rem;
+  position: relative;
+}
+a::before {
+  content: '';
+  background-color: var(--fc--link);
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 100%;
+  height: 0.25rem;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+a:hover, a:focus {
+  color: var(--fc--primary);
+}
+a:hover::before, a:focus::before {
+  height: 0.5rem;
+}
+
+article {
+  margin: 2rem 0;
+}
+
+.fs--heading {
+  margin-bottom: var(--mb-spacing);
+}
+
+.job--wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  margin-bottom: var(--mb-spacing);
+}
+.job--wrapper header {
+  grid-area: header;
+}
+.job--wrapper aside {
+  grid-area: aside;
+  align-self: end;
+}
+.job--description {
+  grid-area: description;
+  margin-top: var(--mb-spacing);
+}
+
+ul {
+  padding-left: 1rem;
+  margin-left: 0;
+}
+li {
+  padding-left: 0.5rem;
+  margin-bottom: var(--mb-spacing);
+}
+.section--skills li {
+  margin-bottom: 0;
+}
